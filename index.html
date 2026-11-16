@@ -26,6 +26,18 @@ h1 span{color:var(--cyan)}
 .btn.primary{background:var(--cyan);color:#06121d}
 .profile{min-height:330px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,#163a50,#0c1b2d);display:grid;place-items:center;text-align:center;padding:30px;box-shadow:0 20px 60px #0005}
 .avatar{width:150px;height:150px;border-radius:50%;border:3px solid var(--cyan);display:grid;place-items:center;font-size:52px;font-weight:800;background:#0b1b2b;color:var(--cyan);margin:auto auto 18px}
+.avatar{...}
+.avatar-photo{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:50%;
+  border:3px solid var(--cyan);
+  display:block;
+  margin:0 auto 18px;
+}
+.profile small{...}
 .profile small{color:var(--muted)}
 section{padding:48px 0;scroll-margin-top:85px}
 .section-title{font-size:28px;margin:0 0 8px}.section-title span{color:var(--cyan)}
@@ -58,7 +70,11 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 <div class="actions"><a class="btn primary" href="#about">Explore My Resume</a><a class="btn" href="#references">Contact / References</a></div>
 </div>
 <div class="profile">
-<div><div class="avatar">LB</div><strong>LAWRENCE BELAYA</strong><br><small>Industrial Engineering Student</small><p class="note">Replace this initials circle with your professional photo if you want.</p></div>
+<div>
+  <img class="avatar-photo" src="profile.jpg" alt="Lawrence Belaya">
+  <strong>LAWRENCE BELAYA</strong><br>
+  <small>Industrial Engineering Student</small>
+</div>
 </div>
 </section>
 <section id="about">
